@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #1e293b;
+  --primary-foreground: #ffffff;
+
+  --secondary: #f3f3f3;
+  --secondary-foreground: #091426;
+
+  --accent: #001816;
+  --accent-foreground: #ffffff;
+
+  --background: #f9f9f9;
+  --foreground: #091426;
+
+  --muted: #f3f3f3;
+  --muted-foreground: #45474c;
+
+  --border: #c5c6cd;
+  --ring: #001816;
+
+  --destructive: #000000;
+
+  --card: #ffffff;
+  --card-foreground: #091426;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-inter), Inter, ui-sans-serif, system-ui;
+}
+
+/* Subtle architectural texture */
+.bg-atelier {
+  background-image: radial-gradient(1200px 600px at 10% 0%, rgba(15, 118, 110, 0.10), transparent 55%),
+    radial-gradient(900px 500px at 90% 10%, rgba(30, 41, 59, 0.10), transparent 60%);
+}
